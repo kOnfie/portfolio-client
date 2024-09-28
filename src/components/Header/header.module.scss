@@ -1,0 +1,51 @@
+@import 'src/styles/index.scss';
+@import 'src/styles/mixins.scss';
+
+.header {
+  &_container {
+    max-width: $containerWidth + px;
+    
+    padding: 64px $containerPadding + px;
+    @include adaptiveValue(padding-top, 64, 24);
+    @include adaptiveValue(padding-bottom, 64, 24);
+    margin: 0 auto;
+
+    border-bottom: 1px solid var(--header-bd-color);
+  }
+
+  &_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &_navigation {
+    display: flex;
+    column-gap: 64px;
+
+    &-social {
+      display: flex;
+      align-items: center;
+      column-gap: 32px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &_navigation {
+      &-social {
+        display: none;
+      }
+    }
+  }
+}
+
+.logo {
+  font-family: var(--ibm-font);
+  @include adaptiveValue(font-size, 32, 16);
+
+  &_icon {
+    color: var(--green-text-color);
+
+    margin-right: 8px;
+  }
+}

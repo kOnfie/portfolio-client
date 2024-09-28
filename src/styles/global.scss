@@ -1,0 +1,11 @@
+@import './reset.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+body {
+  font-family: var(--ubuntu-font);
+  font-weight: 400;
+  color: var(--main-text-color);
+
+  background: var(--main-bg-color);
+}
