@@ -1,0 +1,25 @@
+@import '../../styles/index.scss';
+
+.intro {
+  &_container {
+    max-width: $containerWidth + px;
+    padding: 0 $containerPadding + px;
+    margin: 0 auto;
+  }
+
+  &_body {
+    padding: 0 128px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 117px;
+    line-height: 134px;
+    color: var(--title-text-color);
+
+    text-align: center;
+    margin: 64px 0;
+  }
+}

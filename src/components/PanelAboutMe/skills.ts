@@ -1,0 +1,15 @@
+export default [
+  'HTML',
+  'CSS',
+  'SCSS',
+  'JS',
+  'TS',
+  'REACT',
+  'ReduxToolkit',
+  'JEST',
+  'ReactRouterDom',
+  'ReactQuery',
+  'NODE',
+  'express',
+  'mongodb',
+];

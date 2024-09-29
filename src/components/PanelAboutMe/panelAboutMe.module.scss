@@ -1,0 +1,91 @@
+.panel {
+  max-width: 320px;
+  
+  padding: 37px 22px;
+  text-align: center;
+
+  border-radius: 120px 0px;
+  border: 4px solid #fff;
+
+
+  overflow: hidden;
+
+  &_header {
+    max-width: 168px;
+
+    margin: 0 auto 32px;
+
+    font-family: var(--ibm-font);
+
+    img {
+      width: 96px;
+      aspect-ratio: 1;
+
+      outline: 3px solid var(--green-bd-color);
+      border-radius: 50%;
+
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 42px;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+
+  &_contactInfo {
+    display: grid;
+    row-gap: 16px;
+
+    &-mail {
+      svg {
+        height: 11px;
+      }
+    }
+    &-map {
+      svg {
+        height: 16px;
+      }
+    }
+    &-case {
+      svg {
+        height: 12px;
+      }
+    }
+  }
+
+  &_skills {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 8px;
+
+    margin-top: 16px;
+    margin-bottom: 32px;
+    padding-right: 25px;
+  }
+
+  &_download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+
+    width: 227px;
+    margin-right: 47px;
+    padding: 16px 0;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    border-radius: 32px;
+
+    transition: all 0.3s;
+  }
+}

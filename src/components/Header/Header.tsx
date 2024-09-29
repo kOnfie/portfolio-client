@@ -1,4 +1,4 @@
-import HeaderNavigation from '../HeaderNavigation/HeaderNavigation';
+import HeaderNavigation from './HeaderNavigation/HeaderNavigation';
 import SocialMedia from '../ui/SocialMedia/SocialMedia';
 import s from './header.module.scss';
 
