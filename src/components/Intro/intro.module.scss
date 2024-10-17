@@ -1,6 +1,10 @@
-@import '../../styles/index.scss';
+@import "src/styles/index.scss";
+@import "src/styles/mixins.scss";
 
 .intro {
+  @include adaptiveValue(margin-top, 64, 20);
+  @include adaptiveValue(margin-bottom, 128, 20);
+
   &_container {
     max-width: $containerWidth + px;
     padding: 0 $containerPadding + px;
@@ -8,18 +12,32 @@
   }
 
   &_body {
-    padding: 0 128px;
-
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    column-gap: 15px;
+
+    @include adaptiveValue(padding-right, 128, 0, 0, 1100, 768);
+    @include adaptiveValue(padding-left, 128, 0, 0, 1100, 768);
   }
 
   h1 {
-    font-size: 117px;
+    text-align: center;
+
     line-height: 134px;
     color: var(--title-text-color);
+    font-size: 117px;
 
-    text-align: center;
-    margin: 64px 0;
+    margin-bottom: 64px;
+  }
+
+  @media (width <= 767.98px) {
+    &_body {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    h1 {
+      display: none;
+    }
   }
 }

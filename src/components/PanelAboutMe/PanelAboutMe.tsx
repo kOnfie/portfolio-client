@@ -12,7 +12,7 @@ const PanelForMe = () => {
     <div className={s.panel}>
       <div className={s.panel_header}>
         <img src={avaImg} alt="Ava for me" />
-        <h2>Denys</h2>
+        <h3>Denys</h3>
         <p>Full-stack developer</p>
       </div>
 

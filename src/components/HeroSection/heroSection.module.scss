@@ -1,0 +1,74 @@
+@import "src/styles/mixins.scss";
+
+.heroSection {
+  &_body {
+    text-align: right;
+
+    display: grid;
+    row-gap: 32px;
+
+    h2 {
+      line-height: 1.2;
+      @include adaptiveValue(font-size, 64, 35);
+      span {
+        color: var(--green-text-color);
+      }
+    }
+
+    &-block {
+      &.info {
+        // text-align: left;
+      }
+    }
+
+    &-talk {
+      display: flex;
+      align-items: center;
+      column-gap: 16px;
+
+      text-align: right;
+      width: 250px;
+
+      background-color: transparent;
+
+      p {
+        color: var(--green-text-color);
+        font-size: 32px;
+        font-family: var(--ibm-font);
+      }
+
+      div {
+        background-color: var(--header-bd-color);
+        border-radius: 50%;
+
+        width: 40px;
+        aspect-ratio: 1;
+
+        display: grid;
+        place-items: center;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &-about {
+      margin: 10px 0;
+      font-family: var(--ibm-font);
+      line-height: 1.4;
+      // text-align: left;
+
+      max-width: 610px;
+
+      opacity: 0.9;
+    }
+
+    &-tag {
+      font-size: 14px;
+      color: var(--green-text-color);
+      font-family: var(--ibm-font);
+    }
+  }
+}
